@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Page 2</title>
+    <!--  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> --->
+    <script type="text/javascript" src="midterm.js"></script>
+    <link href="midterm.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="background" onload="getInforCookie(); welcomepage3() ">
+
+    <div class="row header">
+        <h1 class="center">ABC catering company </h1>
+
+    </div>
+    <h2 class="center">Wellcome <span id="date"></span> </h2>
+    <form onsubmit="return false ">
+        <h2 class="center"> Please fill the form bellow.</h2>
+
+
+        <table class="form1">
+
+            <tr>
+                <td>
+                    <br>
+                    <h3 class="center"> CONTACT INFORMATION</h3>
+                </td>
+
+            </tr>
+
+        </table>
+
+        <table class="form1">
+           
+            <tr>
+                <td >First Name:</td>
+               
+                <td><input  size="20" type="text" name="fname" id="ofname" pattern="[a-zA-Z-]{1,20}" placeholder="Enter a-z or A-Z (maximum 20 letters) " minlength="1" maxlength="25" title="First Name may not contain any numbers." autofocus></td>
+            </tr>
+
+
+
+            <tr>
+                <td>Last Name:</td>
+                <td><input pattern="[A-Za-z-]{1,20}" size="20" type="text" name="lname" id="olname" placeholder="Enter a-z or A-Z (maximum 20 letters)" title="Last Name may not contain any numbers."></td>
+            </tr>
+
+            <tr>
+                <td>Street Address:</td>
+                <td><input type="text" name="address" id="oaddress" placeholder="ex: 1234 Main Street" title="ex: 1234 Main Street"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" name="address" id="city" placeholder="ex: Calgary" title="ex: Calgary"></td>
+            </tr>
+            <tr>
+                <td>Province:</td>
+                <td class="left">
+                    <select id="province">
+
+                        <option value="AB">AB</option>
+                        <option value="BC">BC</option>
+                        <option value="MB">MB</option>
+                        <option value="NB">NB</option>
+                        <option value="NL">NL</option>
+                        <option value="NS">NS</option>
+                        <option value="ON">ON</option>
+                        <option value="PE">PE</option>
+                        <option value="QC">QC</option>
+                        <option value="SK">SK</option>
+                        <option value="NT">NT</option>
+                        <option value="NU">NU</option>
+                        <option value="YT">YT</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Postal Code </td>
+                <td><input type="text" name="Postcode" id="postalcode" required placeholder="ex: A0A 0A0" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" maxlength="7" title="Please enter only A-Z,a-z and 0-9 following format: A0A 0A0 (3 digits space 3 digits) "> </td>
+                <!--- source: http://html5pattern.com/Postal_Codes --->
+            </tr>
+            <tr>
+                <td class="link">Phone Number </td>
+                <td class="link"><input class="input1" pattern="[0-9]+" type="tel" name="Telenumber" id="onumber" placeholder="xxxxxxxxxx" title="Please enter 10 numbers without dashes" minlength="10" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="emailadd" size="20" id="oemail" placeholder="ex: youremail@mail.com" title="ex: please enter your email address"></td>
+            </tr>
+            
+
+        </table>
+
+
+
+
+        <h3 class="center">MENU</h3>
+        <table class="formtype ">
+            <tr>
+                <td>Type of Cake</td>
+                <td> Option for tiers</td>
+                <td>Volum</td>
+            </tr>
+            <tr>
+                <td class="type">
+                    <table>
+
+                        <tr>
+                            <td class="center">
+                                <input onclick="vadidateOrder()" type="radio" name="shape" id="Full" value="10.00" /><br>
+                                <p id="lbfull">Full slab <br><small>(rectangle-shaped)</small></p>
+                                <!-- https://www.theflowershop.ae/images/medium283/RECTANGULAR-STRAWBERRY-CAKE-250816.jpg-->
+                            </td>
+                            <td> <img class="portrait" src="image/full.jpg" alt=" Full cake" /></td>
+
+
+                        </tr>
+                        <tr>
+                            <td class="center">
+
+                                <input onclick="vadidateOrder()" type="radio" name="shape" id="half" value="12.00" /><br>½ slab <br><small>(rectangle-shaped)</small>
+                                <!---http://www.laroccacakes.com/wp-content/uploads/2015/11/RARAVE1826.png--->
+                            </td>
+                            <td> <img class="portrait" src="image/half.png" alt=" half cake" /></td>
+
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <input onclick="vadidateOrder()" type="radio" name="shape" id="quater" value="14.00" /><br>¼ slab <br><small>(rectangle-shaped)
+
+                                </small>
+                                <!---https://aromacakes.online/pub/media/catalog/product/cache/bc1b6d4d936e4b2c94c28f566fe9b04d/f/n/fn317-800x800.jpg--->
+                            </td>
+                            <td> <img class="portrait" src="image/quarter.jpg" alt=" quater cake" /></td>
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <input onclick="vadidateOrder()" type="radio" name="shape" id="Cylin" value="20.00" /><br> Cylindrical cake
+                            </td>
+                            <!---https://cdn.igp.com/f_auto,q_auto,t_prodm/products/p-chocolate-cake-with-chocolate-fence-1-kg--4791-m.jpg--->
+                            <td> <img class="portrait" src="image/cylin.jpg" alt=" cycle cake" /></td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="type">
+                    <table>
+
+                        <tr class="type">
+                            <td>
+                                <input onclick="vadidateOrder()" type="checkbox" name="tiers" id="tiers1/2" value="12.00" /><br>
+                                <p id="lb1/2">½ slab <br><small> (rectangle-shaped)</small></p>
+                            </td>
+                        </tr>
+                        <tr class="type">
+                            <td>
+                                <input onclick="vadidateOrder()" type="checkbox" name="tiers" id="tiers1/4" value="14.00" /><br>
+                                <p id=lb1/4>¼ slab <br><small> (rectangle-shaped)</small></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="type">
+                    <table>
+
+                        <tr>
+                            <td>
+                                <p id="lbwidth">Width:</p>
+                            </td>
+                            <td><input class="sort" type="number" name="width" min="1" size="20" id="width" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="lbheigh">Heigh:</p>
+                            </td>
+                            <td><input class="sort" type="number" name="heigh" size="20" min="1" id="heigh" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="lblength">Length:</p>
+                            </td>
+                            <td><input class="sort" type="number" name="length" size="20" min="1" id="length" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="lbradius">Radius:</p>
+                            </td>
+                            <td><input class="sort" type="number" name="radius" size="20" min="1" id="radius" /></td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="3" class="center">
+                    <table class="form2">
+                        <tr>
+                            <td class="noborder"><input class="submit" type="submit" onClick="TotalCalculate();" value=" Order" /> </td>
+                            <td class="noborder"> <input class="reset" type="reset" value="Reset"> </td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+
+        </table>
+
+        <table class="formtype ">
+
+
+            <tr>
+                <td>
+                    <span id="orderdetails"></span>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body></html>

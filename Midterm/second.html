@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Page 2</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="midterm.js"></script>
+    <link href="page2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="welcome()">
+
+    <h3 class="center">Welcome <span id="lname"></span></h3>
+   
+    <table class="form1">
+        <tr>
+            <td>
+                <table>
+                    <th> LENGTH/DISTANCE</th>
+                    <tr>
+                       
+                        <th>Imperial Value Inch</th>
+                        <th>Metric Value millimetres </th>
+                    </tr>
+                     
+                    <tr>
+                        <td><input type="number" min="0" id="inch" onchange=" convertToMillimetres(this.value)"></td>
+                        <td><input type="number" min="0" id="mm" onchange="convertToInch(this.value)" ></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table> 
+                    <th>TEMPERATURE</th>
+                    <tr>
+                       
+                        <th>Imperial Value Fahrenheit</th>
+                        <th>Metric Value Celsius </th>
+                    </tr>
+                    <tr>
+                        <td><input type="number"  id="Fahrenheit" onchange="convertToCelsius(this.value)"></td>
+                        <td><input type="number"  id="Celsius" onchange="convertToFahrenheit(this.value)"></td>
+                    </tr>
+                 </table> 
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <th> SQUARE MEASURE (AREA)</th>
+                    <tr>
+                       
+                        <th>Imperial Value square inch </th>
+                        <th>Metric Value  centimeters  </th>
+                    </tr>
+                     
+                    <tr>
+                        <td><input type="number" min="0" id="squareInch" onchange="convertToCm(this.value)"></td>
+                        <td><input type="number" min="0" id="cm" onchange="convertToInch_AREA(this.value)"></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>  
+                     <th> SPEED</th>
+                    <tr>
+                       
+                        <th> MILES PER HOUR </th>
+                        <th>KILOMETRE PER HOUR  </th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" min="0" id="MILES" onchange="convertToKILOMETRE(this.value)"></td>
+                        <td><input type="number" min="0" id="KILOMETRE" onchange="convertToMILES(this.value)"></td>
+                    </tr>
+                 </table> 
+                </td>
+        </tr>
+        
+         <tr>
+            <td>
+                <table>
+                    <th> CAPACITY MEASURE (VOLUME)</th>
+                    <tr>
+                       
+                        <th>Imperial Value gallon</th>
+                        <th>Metric Value  litres  </th>
+                    </tr>
+                     
+                    <tr>
+                        <td><input type="number" min="0" id="gallon" onchange="convertTolitres(this.value)"></td>
+                        <td><input type="number" min="0" id="litres"  onchange="convertTogallon(this.value)"></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>  
+                  <th>   MASS (WEIGHT)</th>
+                    <tr>
+                       
+                        <th>Imperial Value grain </th>
+                        <th>Metric Value gram </th>
+                    </tr>
+                    <tr>
+                        <td><input type="number" min="0" id="grain" onchange="convertToGram(this.value)"></td>
+                        <td><input type="number" min="0" id="gram"  onchange="convertToGrain(this.value)" ></td>
+                    </tr>
+                 </table> 
+                </td>
+        </tr>
+                </table>
+           
+
+    <tr>
+        <td colspan="2" class="center">
+            <p><a href="page3.html">Next Page</a></p>
+        </td>
+    </tr>
+        
+        
+</body>
+
+</html>

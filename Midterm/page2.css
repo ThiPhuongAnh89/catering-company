@@ -1,0 +1,42 @@
+body{
+	background: rgba(123,231,103,1);
+	font-family: Tahoma;
+}
+
+input {
+	background-color: yellow;
+}
+
+.input
+{
+	background-color: blue;
+  	color: white;
+}
+
+.output
+{
+	background-color: green;
+	color: white;
+}
+
+ td, tr 
+{
+	border: 1px solid black;
+	text-align: center;
+}
+
+.center {
+    text-align: center;
+    
+}
+table.form1 {
+   /* border-color: blue; */
+   
+    
+    margin-left:auto; 
+    margin-right:auto;
+    
+    width: 70%;
+       
+
+}

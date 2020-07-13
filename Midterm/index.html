@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>midterm</title>
+    
+    <script type="text/javascript" src="midterm.js"></script>
+    <link href="midterm.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body class="background">
+    <div class="row header">
+        <h1 class="center">Thi Phuong Anh - 000787900 </h1>
+    </div>
+
+    <div class="center">
+
+        <table class="descriptionPage">
+        <tr>
+            <td>
+            
+            <h2>My pages Information</h2>
+        <p><a href="index.html">Home page</a> The page is using cookies to save Salutation, First name, Last name, Phone number, Email. When the form is submitted, the data from the following fields will be saved in cookies </p>
+        <p><a href="second.html"> Converting page</a> a page that converts 6 different measurement types </p>
+        <p><a href="page3.html"> Customized page </a>The page will get some informaton from cookies, including the type of case and calculate the cost for client.</p>
+                
+            </td>
+            </tr>
+        </table>
+        
+        <!--  <form onsubmit="return false"> --->
+        <form onsubmit="return false;">
+
+            <!--https://stackoverflow.com/questions/8395269/what-do-form-action-and-form-method-post-action-do -->
+
+
+            <table class="form1">
+
+                <tr >
+                    <td>
+
+                        <table class="form3">
+
+                            <tr>
+                                <td>
+                                    <h3 class="center"> Contact Information</h3>
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                        <table class="form2">
+                            <tr>
+                                <td>
+                                    <select id="salutation">
+                                        <option value="Mr">Mr</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Ms">Ms</option>
+                                        <option value="Dr">Dr</option>
+                                    </select>
+                                </td>
+                            </tr>
+                           
+                            <tr>
+                                <td>First Name:</td>
+                                <td><input size="20" type="text" name="fname" id="fname" pattern="[a-zA-Z-]{1,25}" placeholder="Enter a-z or A-Z (maximum 25 letters) " minlength="1" maxlength="25" title="First Name may not contain any numbers." autofocus required />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Last Name:</td>
+                                <td><input pattern="[A-Za-z-]{1,25}" size="25" type="text" name="lname" id="lname" placeholder="Enter a-z or A-Z (maximum 25 letters)" title="Last Name may not contain any numbers." required />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Phone Number </td>
+                                <td><input class="input1" pattern="[0-9]+" type="tel" name="phoneNum " id="number" placeholder="xxxxxxxxxx" title="Please enter 10 numbers without dashes" minlength="10" maxlength="10" required />
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" name="emailadd" size="20" id="email" placeholder="ex: youremail@" title="ex: please enter your email address" required />
+                                </td>
+                            </tr>
+
+                            <tr >
+                                <td colspan="2" class="center">
+                                    <table class="form2">
+                                        <tr>
+                                            <td class="noborder"><input class="submit" type="submit" onClick="setInformationCookie()" /> </td>
+                                            <td class="noborder"> <input class="reset" type="reset" value="Reset"> </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                            </tr>
+
+
+                        </table>
+
+                    </td>
+                </tr>
+
+            </table>
+
+
+        </form>
+        
+
+    </div>
+</body>
+
+</html>

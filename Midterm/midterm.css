@@ -1,0 +1,195 @@
+header {
+	text-align: center;
+}
+
+body, input {
+	font-family: Gotham Book, Arial;
+	font-size: 12x;
+	/* background-color: orange; */
+    margin-bottom: 70px;
+}
+
+/*table, td {
+	border: 0px solid lightgrey;
+	padding: 5px;
+}
+*/
+
+
+body.background {
+  /*https://www.toptal.com/designers/subtlepatterns/geometry-2/*/
+    background-image: url("image/geometry2.png");
+    background-repeat: repeat;
+  
+    
+
+   
+}
+
+
+/* source: in lab 3*/
+.header {
+    background-color: red;
+    background-size: 100% 100%;
+    margin-bottom: 3%;
+}
+/* source: in lab 3*/
+.header h1 {
+    color: #fff;
+    font-family: Kaushan Script;
+    line-height: 0.9em;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+
+.center {
+    text-align: center
+}
+
+
+
+input{
+  width: 80%;
+  padding: 8px 30px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  /* background-color: white; */
+}
+.input1{
+  width: 80%;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  /* background-color: white; */
+}
+
+
+.reset {
+    background: darkblue;
+    color: white;
+    border-radius: 4px;    
+}
+
+.submit {
+    background: green;
+    color: white;
+    border-radius: 4px;
+   
+}
+
+
+table.descriptionPage {
+    border-style:inset;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 50%;
+    border: 0px ;
+}
+
+table.descriptionPage td{
+   text-align: left;
+}
+
+table.form1 td {
+	text-align: right;
+}
+
+table.form1 {
+   /* border-color: blue; */
+    border-style:inset;
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: lightgrey;
+    width: 50%;
+    border: 0px solid lightgrey
+        
+    
+  /*border-color: lightgrey;  */ 
+
+}
+
+table.formtype {
+     border: 1px solid lightgrey;
+    border-style:inset;
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: lightgrey;
+    width: 50%;
+   text-align: center;
+
+}
+
+td.type {
+   border: 1px solid lightgrey;
+    border-style:inset;
+    width: 130px;
+    height: 200px;
+   text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+
+}
+tr.type{
+    width: 200;
+    height: 25px; 
+}
+tr.boder{
+    border-bottom: 2 solid lightgrey;
+}
+
+
+
+table.form2 {
+    border-color: lightgrey;
+    /* border-style:inset;
+      background-color:grey;*/
+    margin-left:auto; 
+    margin-right:auto;
+    width: 70%;
+    align-content: center
+}
+
+table.form3 {
+   
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: darkgray;
+    width: 80%;
+}
+
+table.form {
+    
+   
+    width: 80%;
+    margin-left:auto; 
+    margin-right:auto;
+   
+}
+
+}
+td.width100{
+    width: 100%;
+}
+
+img.portrait{
+    height: 100px;
+    width: 100px;
+}
+
+.error {
+	background-color: red;
+}
+
+input.sort{
+    width: 25px;
+}
+
+input.long{
+    width: 250px;
+ float: left;
+}
+
+
